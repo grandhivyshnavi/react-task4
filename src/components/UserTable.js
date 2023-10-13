@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import 'C:/MERN/ReactJS/task4/src/App.css';
+import '../App.css';
 
 const UserTable = () => {
     const [users, setUsers] = useState([]);
@@ -25,7 +25,7 @@ const UserTable = () => {
     return (
         <div className="box">
             <center><h2>Dummy data</h2></center>
-            <table>
+            <center><table>
                 <thead>
                     <tr>
                         <th>Sno</th>
@@ -56,7 +56,7 @@ const UserTable = () => {
                         </tr>
                     ))}
                 </tbody>
-            </table>
+            </table></center>
         </div>
     );
 };
